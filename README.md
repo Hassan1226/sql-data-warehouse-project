@@ -1,64 +1,58 @@
-🏢 Modern Data Warehouse & Analytics Project
+# 🏢 Modern Data Warehouse & Analytics Project
 
-Welcome to the Modern Data Warehouse & Analytics Project! This repository contains the complete blueprint and implementation of an end-to-end data engineering and business intelligence solution built using SQL Server.
+Welcome to the **Modern Data Warehouse & Analytics Project** repository! This project demonstrates an end-to-end data engineering and business intelligence solution built using **SQL Server**, covering everything from raw data ingestion to analytical reporting.
 
-🧭 Project Overview
+---
 
-This project guides you through the process of building a modern data warehouse solution from the ground up:
+## 🧭 Project Overview
 
-Architecture Design: Designing a modern, three-layer data warehouse (Bronze, Silver, and Gold).
+This project is structured around four primary milestones:
 
-ETL Pipelines: Building robust pipelines to ingest raw source files and systematically transform data across layers.
+1. **Architecture Design:** Implement a modern, three-layer data warehouse structure consisting of **Bronze** (raw landing), **Silver** (cleansed/transformed), and **Gold** (business-ready aggregated) layers.
+2. **ETL Pipelines:** Construct pipelines to ingest CSV source files and process data seamlessly across all three warehouse layers.
+3. **Data Modeling:** Model cleaned data into a star schema featuring optimized fact and dimension tables tailored for analytical querying.
+4. **Data Analysis:** Author SQL scripts to evaluate business performance and extract actionable insights.
 
-Data Modeling: Structuring fact and dimension tables into an analytical data model ready for BI tools.
+---
 
-Data Analysis: Writing SQL queries to answer strategic business questions and extract actionable metrics.
+## 🛠️ Tools & Prerequisites
 
-🛠️ Tools & Links
+* **Database System:** SQL Server & SQL Server Management Studio (SSMS) — *See `00_setup/` for environment installation instructions.*
+* **Version Control:** Git & GitHub
+* **Diagramming & Design:** [draw.io](https://app.diagrams.net/) (used for architectural diagrams and ERDs)
+* **Project Tracking:** Notion (Project plan templates and step-by-step task tracking)
 
-SQL Server & SSMS: Database engine and management interface (see the step-by-step setup guide in 00_setup).
+---
 
-Git & GitHub: Version control for tracking code, scripts, and documentation.
+## 🚀 Project Requirements
 
-draw.io: Visual diagramming for architecture layers and data models.
+### 🏗️ Data Engineering (Data Warehouse Development)
 
-Notion: Project planning templates and step-by-step task tracking.
+* **Objective:** Establish a consolidated SQL Server data warehouse integrating multiple operational data sources to support enterprise analytics.
+* **Specifications:**
+  * **Data Sources:** Ingest CSV extracts from two primary source systems: **ERP** and **CRM**.
+  * **Data Quality & Cleansing:** Identify and remediate data quality issues, handle missing values, and normalize data types before final loading.
+  * **Integration:** Merge CRM and ERP records into a single, unified star schema model tailored for high-performance querying.
+  * **Scope:** Focuses exclusively on the **latest snapshot dataset** (historical tracking/SCD is not required for this phase).
+  * **Documentation:** Provide detailed architecture diagrams and data dictionaries for business users and technical teams.
 
-🚀 Project Requirements
+---
 
-🏗️ 1. Building the Data Warehouse (Data Engineering)
+### 📊 Data Analysis & BI Reporting
 
-Objective: Develop a modern data warehouse using SQL Server to consolidate multi-source sales data, enabling analytical reporting and informed decision-making.
+* **Objective:** Write optimized SQL analytics queries to extract detailed business metrics and drive data-informed decision-making.
+* **Analytical Focus:**
+  * 👤 **Customer Behavior:** Purchasing frequency, customer lifetime metrics, and segment analysis.
+  * 📦 **Product Performance:** Revenue generation by product line, best/worst performers, and category trends.
+  * 📈 **Sales Trends:** Period-over-period sales growth, seasonal trends, and key performance indicators (KPIs).
 
-Specifications:
+---
 
-Data Sources: Ingest raw data from two source systems (ERP and CRM) provided as CSV files.
+## 📁 Repository Structure
 
-Data Quality: Identify, clean, and resolve data quality issues prior to downstream analysis.
-
-Integration: Unify both sources into a single, user-friendly data model optimized for analytical queries.
-
-Scope: Focus on the latest dataset only (data historization is not required).
-
-Documentation: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
-
-📊 2. BI: Analytics & Reporting (Data Analysis)
-
-Objective: Develop SQL-based analytics to deliver detailed insights into core business domains.
-
-Key Focus Areas:
-
-Customer Behavior: Purchasing patterns, segmentation, and engagement.
-
-Product Performance: Top-selling items, revenue drivers, and category trends.
-
-Sales Trends: Growth patterns, seasonality, and performance metrics over time.
-
-📁 Repository Structure
-
-.
-├── 00_setup/           # Setup guides and database configuration
-├── 01_data/            # Source CSV files (ERP & CRM)
-├── 02_architecture/    # System architecture and data model diagrams
-├── 03_scripts/         # SQL scripts for Bronze, Silver, Gold layers
-└── README.md           # Project documentation
+```text
+├── 00_setup/           # Setup guides for SQL Server, SSMS, and dependencies
+├── 01_datasets/        # Raw source data files (ERP & CRM CSVs)
+├── 02_sql_scripts/     # DDL, ETL pipeline scripts, and Gold layer views
+├── 03_docs/            # Architecture diagrams, data models, and documentation
+└── README.md           # Master documentation file
