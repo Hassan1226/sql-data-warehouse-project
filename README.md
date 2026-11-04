@@ -64,5 +64,5 @@ This project is structured around four primary milestones:
 ---
 ### 🏛️ High Level Architecture Diagram
 <img width="759" height="562" alt="image" src="https://github.com/user-attachments/assets/d004835f-7648-4e8f-9ec9-4b306699032a" />
----
+
 
