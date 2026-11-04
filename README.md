@@ -56,3 +56,7 @@ This project is structured around four primary milestones:
 ├── 02_sql_scripts/     # DDL, ETL pipeline scripts, and Gold layer views
 ├── 03_docs/            # Architecture diagrams, data models, and documentation
 └── README.md           # Master documentation file
+```
+## 🖇️ Links
+* Use the below link to see the project tracking in Notion 
+* https://app.notion.com/p/DATA-WAREHOUSE-PROJECT-40d5dcceccc3802a82b3cb30bb20760f?source=copy_link
