@@ -57,6 +57,12 @@ This project is structured around four primary milestones:
 ├── 03_docs/            # Architecture diagrams, data models, and documentation
 └── README.md           # Master documentation file
 ```
+---
 ## 🖇️ Links
 * Use the below link to see the project tracking in Notion 
 * https://app.notion.com/p/DATA-WAREHOUSE-PROJECT-40d5dcceccc3802a82b3cb30bb20760f?source=copy_link
+---
+### 🏛️ High Level Architecture Diagram
+<img width="759" height="562" alt="image" src="https://github.com/user-attachments/assets/d004835f-7648-4e8f-9ec9-4b306699032a" />
+---
+
